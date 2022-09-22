@@ -27,6 +27,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 100px;
+  letter-spacing: 1rem;
 }
 
 /* Search & Button */
@@ -127,12 +128,12 @@ nav li {
   font-size: 2rem;
   letter-spacing: 0.5rem;
   padding-right: 2rem;
+  padding-left: 2rem;
   border-right: 1px solid black;
 }
 
 li:last-child {
   border: none;
-  padding-left: 2rem;
 }
 
 a {
@@ -140,5 +141,5 @@ a {
 }
 
 a:hover {
-  color: rgb(54, 49, 217);
+  color: #808080;
 }
