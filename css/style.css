@@ -6,7 +6,8 @@
 
 html {
   font-size: 65%;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: 'Quicksand', sans-serif;
   background-color: rgb(248, 248, 248);
   color: #000;
 }
@@ -45,6 +46,7 @@ h1 {
   text-align: left;
   width: 300px;
   display: inline-block;
+  letter-spacing: .5rem;
 }
 
 .btn {
@@ -115,7 +117,7 @@ h3 {
 
 /* Nav */
 
-nav {
+nav, footer {
   padding-top: 2rem;
   text-align: center;
 }
@@ -135,4 +137,8 @@ li:last-child {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  color: rgb(54, 49, 217);
 }
