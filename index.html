@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of this document -->
     <title>Cocktail Database</title>
 
     <!-- Linked CSS -->
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <!-- Page Title -->
         <h1>Search Drink Recipes!</h1>
     </header>
-    <!-- Search & Button -->
-    <section class="search">
-        <input type="text" placeholder="drink name" class="srchbar"><input type="button" value="Find Drink" class="btn">
-    </section>
 
+    <!-- Search & Button -->
+    <form action="">
+        <section class="search">
+            <input type="text" placeholder="drink name" class="srchbar"><input type="button" value="Find Drink" class="btn">
+        </section>
+    </form>
+    
     <!-- Drink Information Display -->
     <table class="basics hide">
         <tr>
+            <td class="drinkImg">
+                <!-- Drink Image -->
+                <img src="" alt="">
+            </td>
             <td class="names">
                 <!-- Name -->
                 <h2></h2>
                 <!-- Drink Type -->
                 <h3></h3>
-            </td>
-            <td class="drinkImg">
-                <!-- Drink Image -->
-                <img src="" alt="">
             </td>
         </tr>
     </table>
