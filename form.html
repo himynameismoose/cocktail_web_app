@@ -64,6 +64,28 @@
     </head>
 
     <body>
+        <!-- Internal JavaScript -->
+        <script type="text/javascript">
+            // Validate both name and email 
+            function validate() {
+                var email = document.getElementById('email').value;
+                // regex string literal for email address
+                var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+                // Get the liquor club selected value from drop-down
+                var club = document.getElementById('liquor');
+                var liquorClub = club.options[club.selectedIndex].text;
+
+                if (email.match(regex)) {
+                    alert("Welcome to the " + liquorClub + " club!");
+                    
+                } else {
+                    alert("Invalid email address");
+                    
+                    
+                }
+            }
+        </script>
         <header>
             <!-- Page Title -->
             <h1>Join the Club!</h1>
@@ -72,13 +94,7 @@
         <p style="text-align: center;">Join my liquor club today!</p>
 
         <!-- Form -->
-        <form action="#">
-                
-            <label for="name">
-                Name
-                <input type="text" id="name" placeholder="Full name" pattern="[a-zA-Z]+" required>
-            </label>
-            <br>
+        <form>
             <label for="email">
                 Email
                 <input type="email" id="email" placeholder="Email address" required>
@@ -95,7 +111,7 @@
                 </select>
             </label>
             <br>
-            <input type="button" value="Join" class="btn">
+            <input type="submit" value="Join" class="btn" onclick="validate()">
         </form>
 
         <!-- nav links -->
