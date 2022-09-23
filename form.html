@@ -20,8 +20,8 @@
             p {
                 font-size: 3rem;
             }
-            /* Form */
 
+            /* Form */
             .form {
                 display: flexbox;
                 align-items: center;
@@ -31,13 +31,11 @@
                 text-align: center;
                 padding: 50px;
             }
-
             form {
                 text-align: center;
                 font-size: 2rem;
                 margin-bottom: 30px;
             }
-
             input,
             select {
                 border-radius: 5px;
@@ -47,7 +45,6 @@
                 padding: 5px 10px;
                 letter-spacing: .25rem;
             }
-
             .btn {
                 background-color: #000;
                 border: 0px solid #000;
@@ -56,17 +53,17 @@
                 width: 100px;
                 padding: 10px;
             }
-
             .btn:hover {
                 background: #808080;
             }
+
         </style>
     </head>
 
     <body>
         <!-- Internal JavaScript -->
         <script type="text/javascript">
-            // Validate both name and email 
+            // Validate email 
             function validate() {
                 var email = document.getElementById('email').value;
                 // regex string literal for email address
@@ -76,13 +73,11 @@
                 var club = document.getElementById('liquor');
                 var liquorClub = club.options[club.selectedIndex].text;
 
+                // match the regex against the input
                 if (email.match(regex)) {
                     alert("Welcome to the " + liquorClub + " club!");
-                    
                 } else {
                     alert("Invalid email address");
-                    
-                    
                 }
             }
         </script>
