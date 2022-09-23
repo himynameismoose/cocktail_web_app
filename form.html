@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of this document -->
+        <title>Join the Club!</title>
+
+        <!-- Web font -->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+        <!-- Linked CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Internal Style -->
+        <style>
+            p {
+                font-size: 3rem;
+            }
+            /* Form */
+
+            .form {
+                display: flexbox;
+                align-items: center;
+                padding: 0px 300px;
+                border: 1px solid #000;
+                border-radius: 15px;
+                text-align: center;
+                padding: 50px;
+            }
+
+            form {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+
+            input,
+            select {
+                border-radius: 5px;
+                border: 1px solid black;
+                color: #808080;
+                margin: 5px 0 30px 0;
+                padding: 5px 10px;
+                letter-spacing: .25rem;
+            }
+
+            .btn {
+                background-color: #000;
+                border: 0px solid #000;
+                color: #fff;
+                text-align: center;
+                width: 100px;
+                padding: 10px;
+            }
+
+            .btn:hover {
+                background: #808080;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <!-- Page Title -->
+            <h1>Join the Club!</h1>
+        </header>
+
+        <p style="text-align: center;">Join my liquor club today!</p>
+
+        <!-- Form -->
+        <form action="#">
+                
+            <label for="name">
+                Name
+                <input type="text" id="name" placeholder="Full name" pattern="[a-zA-Z]+" required>
+            </label>
+            <br>
+            <label for="email">
+                Email
+                <input type="email" id="email" placeholder="Email address" required>
+            </label>
+            <br>
+            <label for="liquor">
+                Liquor Club Choice
+                <select name="liquor" id="liquor" required>
+                    <option value="whiskey">Whiskey</option>
+                    <option value="rum">Rum</option>
+                    <option value="tequila">Tequila</option>
+                    <option value="vodka">Vodka</option>
+                    <option value="gin">Gin</option>
+                </select>
+            </label>
+            <br>
+            <input type="button" value="Join" class="btn">
+        </form>
+
+        <!-- nav links -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topfive.html">Top 5</a></li>
+                <li><a href="form.html">Join the Club</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            @himynameismoose &copy; 2022
+        </footer>
+    </body>
+</html>
